@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.log
+
+# Model checkpoints (large binaries) — released separately / Zenodo
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+ckpt/
+
+# Large generated corpus — regenerate via dns/gen_dns_corpus.py
+corpus/
+*.npy
+*.npz
