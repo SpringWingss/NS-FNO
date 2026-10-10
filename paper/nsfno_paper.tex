@@ -24,10 +24,19 @@
 
 \title{NS-FNO: Fourier Neural Operator for Three-Dimensional Vorticity Evolution with Multi-Physics Regularity Constraints}
 
-\author{Zhenwen Yuan}
-\ead{zhenwen.yuan@example.edu}
+\author[1]{Fei Yuan\corref{cor1}\fnref{orc1}}
+\ead{yuanfei@hceb.edu.cn}
+\cortext[cor1]{Corresponding author}
+\fntext[orc1]{ORCID: 0000-0006-3355-1871}
+\author[2]{Xuelian Liu\fnref{orc2}}
+\ead{liuxuelian@hainanu.edu.cn}
+\fntext[orc2]{ORCID: 0000-0001-7894-419X}
+\author[1]{Guanfang Wang\fnref{orc3}}
+\ead{wangguanfang@hceb.edu.cn}
+\fntext[orc3]{ORCID: 0009-0004-3679-1622}
 
-\address{[Institution], [Department], [City, Country]}
+\affiliation[1]{organization={School of Information Technology, Hainan Vocational University of Economics and Business}, city={Haikou}, postcode={570228}, state={Hainan}, country={China}}
+\affiliation[2]{organization={School of International Tourism and Public Administration, Hainan University}, city={Haikou}, postcode={570228}, state={Hainan}, country={China}}
 
 \begin{abstract}
 We present \textbf{NS-FNO}, a 56.67M-parameter three-dimensional Fourier Neural Operator that
@@ -898,14 +907,16 @@ We presented NS-FNO, a 3D Fourier Neural Operator with multi-physics regularity 
 
 % ============================================================
 \section*{Acknowledgments}
-The authors gratefully acknowledge computational resources provided by [institution /
-cluster]; the DNS corpus generation and model training were carried out on NVIDIA RTX 4090D
-GPUs.
+The authors gratefully acknowledge the computational resources used for the DNS corpus
+generation and model training (NVIDIA RTX 4090D GPUs). This research was supported by the
+Hainan Provincial Natural Science Foundation [grant number 321RC480] and the High-level
+Talent Research Fund of Hainan Vocational University of Economics and Business [grant
+number hnjmk2022302].
 
 \section*{Data availability}
 The pseudo-spectral DNS solver, training/evaluation code, and the generated genuine-DNS
-corpus will be made publicly available at \url{https://github.com/{ORGANIZATION}/nsfno}
-(final repository link at acceptance), with the corpus archived on Zenodo (DOI reserved).
+corpus are publicly available at \url{https://github.com/SpringWingss/NS-FNO}, with the full
+corpus archived on Zenodo (DOI reserved at publication).
 The real-DNS evaluation data are the publicly accessible JHTDB
 \texttt{isotropic1024coarse} dataset~\cite{li2018jhtdb}; the finite set of cutouts used (38
 original + 80 expanded) and all evaluation scripts are included in the release.
@@ -915,9 +926,11 @@ The authors declare that they have no known competing financial interests or per
 relationships that could have appeared to influence the work reported in this paper.
 
 \section*{CRediT authorship contribution statement}
-Zhenwen Yuan: conceptualization, methodology, software, validation, formal analysis,
-investigation, resources, data curation, writing --- original draft, writing --- review and
-editing, visualization.
+Fei Yuan: methodology, software, validation, formal analysis, investigation, data
+curation, writing --- original draft, writing --- review and editing, visualization.
+Xuelian Liu: conceptualization, methodology, supervision, writing --- review and editing.
+Guanfang Wang: conceptualization, resources, funding acquisition, supervision,
+writing --- review and editing.
 
 \bibliographystyle{elsarticle-num}
 
