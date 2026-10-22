@@ -84,8 +84,10 @@ These numbers are verified against the raw eval JSONs in [`results/`](results/).
   independently (38 original + 80 expanded from 6 timesteps × 20 regions).
   Download via `jhtdb/jhtdb_download_expanded.py`.
 
-The full generated corpus is archived on Zenodo (DOI reserved at publication);
-the evaluation cutouts and all scripts are included here.
+The 32³ genuine-DNS reference corpus, the JHTDB real-turbulence evaluation cutouts,
+and the trained V5 checkpoint are archived on Zenodo:
+**[10.5281/zenodo.23552777](https://doi.org/10.5281/zenodo.23552777)**.
+The evaluation cutouts and all scripts are included here.
 
 ---
 
